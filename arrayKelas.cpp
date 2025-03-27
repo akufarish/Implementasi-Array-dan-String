@@ -2,12 +2,12 @@
 using namespace std;
 
 string kelas[30];
-int pos = 0;
+int pos = -1;
 void inputData(string nama);
 void outputData();
 
 int main() {
-    inputData("Farish Asqalani");
+    inputData("");
     outputData();
     inputData("Mie Ayam sedap");
     outputData();
@@ -26,7 +26,7 @@ void outputData() {
     {
         cout << kelas[i];
 
-        if (i < pos - 1) {
+        if (i < pos -1) {
             cout << ",";
         } else {
             cout << "." << endl;
